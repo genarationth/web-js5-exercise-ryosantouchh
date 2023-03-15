@@ -9,6 +9,7 @@ const halfDecrement = (x) => {
 };
 
 // ---------- part 2
+// first option using for loop
 const oddNumber = (x) => {
   let temp = [];
   for (let i = 1; i <= x; i++) {
@@ -16,6 +17,13 @@ const oddNumber = (x) => {
   }
   return temp;
 };
+
+// second option using while loop
+let counter = 0;
+while (counter <= 100) {
+  counter % 2 !== 0 ? console.log(counter) : null;
+  counter++;
+}
 
 // ---------- part 3
 const numInBracket = (x) => {
