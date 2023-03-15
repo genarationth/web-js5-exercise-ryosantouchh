@@ -19,11 +19,13 @@ const oddNumber = (x) => {
 };
 
 // second option using while loop
-let counter = 0;
-while (counter <= 100) {
-  counter % 2 !== 0 ? console.log(counter) : null;
-  counter++;
-}
+const oddNum = (x) => {
+  let counter = 0;
+  while (counter <= x) {
+    counter % 2 !== 0 ? console.log(counter) : null;
+    counter++;
+  }
+};
 
 // ---------- part 3
 const numInBracket = (x) => {
